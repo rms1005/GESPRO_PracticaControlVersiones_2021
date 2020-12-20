@@ -63,6 +63,7 @@ language: android
  script:
      # Compile and run lint
      # aqui hacemos un error
+     - ./gradlew clean assembleProdRelease lint --stacktrace
      # Run test coverage report
  #    - ./gradlew jacocoTestMockDebugUnitTestReport
      # Run SonarQube analysis
